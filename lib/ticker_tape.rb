@@ -1,4 +1,4 @@
- def solution(a)
+def solution(a)
   return (a[0] - a[1]).abs if a.length == 2
   left = 0
   right = a.reduce(:+)
