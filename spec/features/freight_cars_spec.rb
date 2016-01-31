@@ -3,7 +3,7 @@ require "freight_cars"
 
 describe 'a car' do
   it "creates a car with first, last, next and previous" do
-    car = Car.new('ABZ', nil, nil)
+    car = Car.new('ABZ')
     assert_equal 'ABZ', car.value
   end
 end
@@ -38,17 +38,23 @@ describe 'a train' do
     train.enqueue('BOO')
     train.enqueue('SAL')
     assert_equal 5, train.length
-    assert_equal 'REST-AZT-RST-BOO-SAL', train.to_s
+    assert_equal 'REST-AZT-RST-BOO-LAS', train.to_s
   end
 
   it 'accepts input and returns a sorted car array' do
     train = Train.new
-    assert_equal ['AYB', 'AZC', 'BAD', 'CZD', 'DEF'], train.getinput
+    assert_equal ["AYB", "AYC", "BAD", "BAM", "DOG", "EXX", "MNO", "OPQ", "QRS"], train.getinput
   end
 
-  it 'finds the longest possible car connection' do
-    train = Train.new
-    assert_equal 'AYB-BAD-DEF', train.alphacars(train.getinput)
-  end
+  # it 'finds the longest possible car connection' do
+  #   train = Train.new
+  #   assert_equal 'AYB-BAD-DEF', train.alphacars(train.getinput)
+  # end
 
+  # it 'finds all possible car connections' do
+  #   cars = ['AYB', 'BAD', 'EXX', "AYC", "DOG", "BAM", "MNO", "OPQ", "QRS"]
+  #   car_paths = find_matches(cars)
+  #   assert_equal ({"AYB"=>["BAD", "BAM"], "BAD"=>["DOG"], "BAM"=>["MNO"], "MNO"=>["OPQ"], "OPQ"=>["QRS"]}), car_paths
+  #   assert_equal "something", print_matches(car_paths)
+  # end
 end
