@@ -6,5 +6,4 @@
   - sq_root
   - equi_index
   - tribonacci
-  - twisted sum
 * add problem descriptions to code so I know what I was solving and source if applicable
