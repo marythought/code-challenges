@@ -16,3 +16,27 @@ describe 'next bigger number' do
     assert_equal(next_bigger(531), -1, "it returns -1 when no bigger # possible")
   end
 end
+
+# Basic tests
+# Small numbers
+# 12
+# Test Passed: Value == 21
+# 513
+# Test Passed: Value == 531
+# 2017
+# Test Passed: Value == 2071
+# 414
+# Test Passed: Value == 441
+# 144
+# Test Passed: Value == 414
+# Bigger numbers
+# 123456789
+# Test Passed: Value == 123456798
+# 1234567890
+# Expected: 1234567908, instead got: -1
+# 9876543210
+# Test Passed: Value == -1
+# 9999999999
+# Test Passed: Value == -1
+# 59884848459853
+# Expected: 59884848483559, instead got: -1
