@@ -22,24 +22,10 @@ class Calculator
     string = string.split(" ")
     sum = string.shift.to_i
     while string.length > 0
-      property = string.shift
+      thisprop = string.shift
       nextnum = string.shift.to_i
-      sum = math(sum, property, nextnum)
+      sum = sum.send(thisprop, nextnum)
     end
     sum
-  end
-
-  def math(num, property, nextnum)
-    case property
-    when "+"
-      num += nextnum
-    when "-"
-      num -= nextnum
-    when "/"
-      num /= nextnum
-    when "*"
-      num *= nextnum
-    end
-    num
   end
 end
