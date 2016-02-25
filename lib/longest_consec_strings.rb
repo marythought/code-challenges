@@ -8,8 +8,8 @@ def longest_consec(strarr, k)
     break if string == ""
     pushstring = string
     if k > 1
-      1.upto(k-1) do |i|
-        pushstring += strarr[index+i]
+      1.upto(k - 1) do |i|
+        pushstring += strarr[index + i]
       end
     end
     array << pushstring

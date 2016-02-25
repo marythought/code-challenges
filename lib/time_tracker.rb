@@ -57,7 +57,7 @@ def format_duration(time)
     return "#{format_time(time[0], "year")}, #{format_time(time[1], "day")} #{format_time(time[3], "minute")} and #{format_time(time[4], "second")}"
   elsif time[3] == 0 # no minutes
     return "#{format_time(time[0], "year")}, #{format_time(time[1], "day")} #{format_time(time[2], "hour")} and #{format_time(time[4], "second")}"
-  elsif time[4] == 0# no seconds
+  elsif time[4] == 0 # no seconds
     return "#{format_time(time[0], "year")}, #{format_time(time[1], "day")} #{format_time(time[2], "hour")} and #{format_time(time[3], "minute")}"
   else
     return "#{format_time(time[0], "year")}, #{format_time(time[1], "day")}, #{format_time(time[2], "hour")}, #{format_time(time[3], "minute")} and #{format_time(time[4], "second")}"

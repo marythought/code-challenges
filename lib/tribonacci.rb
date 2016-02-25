@@ -15,8 +15,8 @@
 
 def tribonacci(signature, n)
   return signature.shift(n) if n < 4
-  0.upto(n-4) do |i|
-    signature << signature[i] + signature[i+1] + signature[i+2]
+  0.upto(n - 4) do |i|
+    signature << signature[i] + signature[i + 1] + signature[i + 2]
   end
   signature
 end
