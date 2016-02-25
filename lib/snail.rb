@@ -1,6 +1,27 @@
+# refactored using transpose
+def snail_refactored(grid)
+  grid = grid.clone
+  path = []
+  loop do
+    path << grid.shift
+    break if grid.empty?
+    grid = grid.transpose
+    path << grid.pop
+    break if grid.empty?
+    grid = grid.transpose
+    path << grid.pop.reverse
+    break if grid.empty?
+    grid = grid.transpose
+    path << grid.shift.reverse
+    break if grid.empty?
+    grid = grid.transpose
+  end
+  path.flatten
+end
+
+# original code
 def snail(grid)
   path = []
-  # until grid.empty?
   loop do
     x = 0
     path << grid.shift
