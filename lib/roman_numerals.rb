@@ -4,17 +4,14 @@ class RomanNumerals
                 5 => 'V', 4 => 'IV', 1 => 'I' }
 
   def self.to_roman(num)
-    if @@letters.key?(num)
-      return @@letters[num]
-    else
-      @@letters.sort_by { |k, _v| k }.reverse!
-      @@letters.keys.reduce('') do |result, key|
-        while num / key > 0 && num > 0
-          result += @@letters[key]
-          num -= key
-        end
-        result
+    return @@letters[num] if @@letters.key?(num)
+    @@letters.sort_by { |k, _v| k }.reverse!
+    @@letters.keys.reduce('') do |result, key|
+      while num / key > 0 && num > 0
+        result += @@letters[key]
+        num -= key
       end
+      result
     end
   end
 
