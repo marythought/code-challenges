@@ -21,7 +21,7 @@ class Calculator
   def sum(string)
     string = string.split(" ")
     sum = string.shift.to_i
-    while string.length > 0
+    until string.length == 0
       thisprop = string.shift
       nextnum = string.shift.to_i
       sum = sum.send(thisprop, nextnum)
