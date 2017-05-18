@@ -1,4 +1,4 @@
-require "spec_helper"
+require "test_helper"
 require "freight_cars"
 
 describe 'a car' do

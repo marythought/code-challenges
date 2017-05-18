@@ -1,4 +1,4 @@
-require "spec_helper"
+require "test_helper"
 require "pascals_triangle"
 
 describe 'pascals triangle sort' do

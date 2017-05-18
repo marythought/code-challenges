@@ -1,4 +1,4 @@
-require "spec_helper"
+require "test_helper"
 require "twisted_sum"
 
 describe 'twisted sum' do

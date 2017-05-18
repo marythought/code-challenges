@@ -1,4 +1,4 @@
-require "spec_helper"
+require "test_helper"
 require "fingers"
 
 describe 'finger count' do

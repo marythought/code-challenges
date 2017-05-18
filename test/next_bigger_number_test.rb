@@ -1,4 +1,4 @@
-require "spec_helper"
+require "test_helper"
 require "next_bigger_number"
 
 describe 'next bigger number' do

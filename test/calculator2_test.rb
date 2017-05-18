@@ -1,4 +1,4 @@
-require "spec_helper"
+require "test_helper"
 require "calculator2"
 
 describe 'calculator count' do

@@ -1,4 +1,4 @@
-require "spec_helper"
+require "test_helper"
 require "array_sum"
 
 describe 'the array sum function' do

@@ -1,0 +1,3 @@
+def stripe(input)
+end
+

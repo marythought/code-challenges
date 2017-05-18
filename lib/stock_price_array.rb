@@ -18,3 +18,23 @@ end
 
 puts "#{get_max(test)} should eql 6"
 puts "#{get_max(a)} should eql -19"
+
+####
+
+def get_max_profit(stock_prices)
+  max_profits = []
+  until stock_prices.empty?
+    buy = stock_prices.shift
+    sales = []
+    stock_prices.each do |price|
+      sales << (price - buy)
+    end
+    max_profits << sales.max if !sales.empty?
+  end
+  max_profits.max
+end
+
+stock_prices_yesterday = [10, 7, 5, 8, 11, 9]
+
+get_max_profit(stock_prices_yesterday)
+# returns 6 (buying for $5 and selling for $11)

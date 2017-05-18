@@ -1,4 +1,4 @@
-require "spec_helper"
+require "test_helper"
 require "longest_consec_strings"
 
 describe 'a string' do

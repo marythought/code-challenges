@@ -1,4 +1,4 @@
-require "spec_helper"
+require "test_helper"
 require "snail"
 
 describe 'snail sort' do
