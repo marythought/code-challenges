@@ -1,5 +1,5 @@
 require "test_helper"
-require "fingers"
+require "archive/fingers"
 
 describe 'finger count' do
   it "counts to the correct number" do

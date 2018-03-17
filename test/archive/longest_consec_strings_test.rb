@@ -1,5 +1,5 @@
 require "test_helper"
-require "longest_consec_strings"
+require "archive/longest_consec_strings"
 
 describe 'a string' do
   it "should return the first longest string consisting of k consecutive strings" do

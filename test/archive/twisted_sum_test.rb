@@ -1,5 +1,5 @@
 require "test_helper"
-require "twisted_sum"
+require "archive/twisted_sum"
 
 describe 'twisted sum' do
   it "map function distills 2 digit number to sum of integers" do

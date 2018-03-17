@@ -1,5 +1,5 @@
 require 'test_helper'
-require 'ball_sort.rb'
+require 'archive/ball_sort.rb'
 
 describe 'ConveyerBelt' do
   # it "creates a conveyer belt and populates with balls" do

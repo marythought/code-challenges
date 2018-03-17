@@ -1,5 +1,5 @@
 require "test_helper"
-require "next_bigger_number"
+require "archive/next_bigger_number"
 
 describe 'next bigger number' do
   # it "should calculate the correct number of possible answers" do

@@ -1,5 +1,5 @@
 require "test_helper"
-require "freight_cars"
+require "archive/freight_cars"
 
 describe 'a car' do
   it "creates a car with first, last, next and previous" do
@@ -11,8 +11,8 @@ end
 describe 'a train' do
   it "instantiates a train with head and tail" do
     train = Train.new
-    assert_equal nil, train.head
-    assert_equal nil, train.tail
+    assert_nil train.head
+    assert_nil train.tail
     assert_equal 0, train.length
   end
 

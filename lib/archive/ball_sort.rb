@@ -1,9 +1,16 @@
+class Colors 
+  attr_accessor :color
+  def initialize(color)
+    @color = color
+  end
+end
+
 class Ball
-  @@colors = %w(red blue green)
   attr_reader :color
 
   def initialize(color = nil)
-    @color = color ? color : @@colors.sample
+    @colors = [Colors.new('red'), Colors.new('blue'), Color.new('green')]
+    @color = color ? color : @colors.sample
   end
 end
 

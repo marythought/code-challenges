@@ -1,5 +1,5 @@
 require "test_helper"
-require "pascals_triangle"
+require "archive/pascals_triangle"
 
 describe 'pascals triangle sort' do
   it "should return a printed triangle by level" do

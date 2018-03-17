@@ -1,5 +1,5 @@
 require "test_helper"
-require "snail"
+require "archive/snail"
 
 describe 'snail sort' do
   it "should return a sorted grid" do

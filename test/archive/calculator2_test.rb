@@ -1,5 +1,5 @@
 require "test_helper"
-require "calculator2"
+require "archive/calculator2"
 
 describe 'calculator count' do
   it "counts to the correct number" do

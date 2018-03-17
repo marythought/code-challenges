@@ -1,5 +1,5 @@
 require "test_helper"
-require "equi_index"
+require "archive/equi_index"
 
 describe 'equilibrium count' do
   it "returns the equilibrium index" do

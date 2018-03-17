@@ -1,5 +1,5 @@
 require "test_helper"
-require "array_sum"
+require "archive/array_sum"
 
 describe 'the array sum function' do
   it "returns two arrays when one element is the sum of the others" do

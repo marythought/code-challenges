@@ -1,5 +1,5 @@
 require "test_helper"
-require "pin"
+require "archive/pin"
 
 expectations = {
   "8" => ["5", "7", "8", "9", "0"],
