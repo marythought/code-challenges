@@ -6,5 +6,3 @@ def fizzbuzz(num)
     p str.empty? ? i : str
   end
 end
-
-fizzbuzz(15)

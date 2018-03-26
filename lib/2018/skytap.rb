@@ -1,26 +1,3 @@
-# Please answer the following five questions. This exercise should take 30-45 minutes.
-
-
-
-
-# QUESTION #0: Agreement not to use external help
-
-# As you complete the test, do not use a search engine, open a REPL, write code
-# in your own IDE/editor, or otherwise use any tools other than CoderPad.
-
-# Do you agree to this? Type your initials below.
-
-# ---
-
-# ANSWER #0: no
-
-# Initials:
-# MCD
-
-
-# ================================================================================
-
-
 # QUESTION #1: Array with odd numbers
 
 # In the language of your choice, implement a function named
@@ -30,18 +7,10 @@
 
 # For instance, `get_odd_numbers([1,2,3,4,5,6,7])` should return `[1,3,5,7]`.
 
-
-# ---
-
-# ANSWER #1:
-
-# Language:
-# ruby
-
 # Implementation:
-# def get_odd_numbers(ary)
-#   ary.select { |e|
-# end
+def get_odd_numbers(ary)
+  ary.select(&:odd?)
+end
 
 
 # ================================================================================
@@ -71,33 +40,11 @@
 # then calling `n3.count_descendants()` should return 3. Calling
 # `n7.count_descendants()` should return 0.
 
-# ---
-
-# ANSWER #2:
-
-# Language:
-# <fill this in>
-
 # Implementation:
-# <fill this in>
-
-
+# (in binary tree file)
 # ================================================================================
 
 
-# QUESTION #3: JavaScript counter
-
-# Implement a JavaScript function named `delayedCounter`. When the function is
-# invoked, one second later the string "1" is logged to the console, then one
-# second after that the string "2" is logged to the console, and so on,
-# indefinitely.
-
-# ---
-
-# ANSWER #3:
-
-# Implementation:
-# <fill this in>
 
 
 # ================================================================================
@@ -133,6 +80,8 @@
 
 # Write a database query to select all users who belong to a group whose name
 # isn't null.
+
+SELECT * FROM users JOIN groups WHERE id=groups.id AND groups.name IS NOT NULL;
 
 # ---
 
